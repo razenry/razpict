@@ -16,7 +16,7 @@ class User extends Authenticatable implements FilamentUser
 
     public function canAccessPanel(Panel $panel): bool
     {
-        return str_ends_with($this->email, '@razpict-main-w4zwz9.laravel.cloud') && $this->hasVerifiedEmail();
+        return true;
     }
 
     /**
